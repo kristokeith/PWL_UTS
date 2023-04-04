@@ -9,7 +9,9 @@ class BarangController extends Controller
 {
     public function index(Request $request){
         if($request->has('search')){
-            $barang = Barang::where('nama_barang','LIKE','%' .$request->search. '%');
+            $barang = Barang::where('nama_barang','LIKE','%' .$request->search. '%')
+                        ->orWhere('kode_barang','LIKE','%' .$request->search. '%')
+                        ->orWhere('kategori_barang','LIKE','%' .$request->search. '%')->get();
         }else {
             $barang = Barang::all();
         } 

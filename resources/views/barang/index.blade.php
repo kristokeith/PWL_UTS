@@ -13,7 +13,7 @@
             <div class="col-md-6">
                 <form action="/barang">
                     <div class="input-group mb-3">
-                        <input type="search" class="form-control" placeholder="Nama Barang" name="search">
+                        <input type="search" class="form-control" placeholder="Nama / Kategori / Kode Barang" name="search">
                         <span class="btn btn-warning" type="submit">Search</span>
                       </div>
                 </form>
