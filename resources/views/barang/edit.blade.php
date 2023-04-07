@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container"></div>
+    <div class="container">
         <h1>Edit Data</h1>
 
         <form action="/barang/{{$barang->id_barang}}" method="POST">
@@ -33,6 +33,8 @@
                 <label for="qty" class="form-label">Quantity Barang</label>
                 <input type="integer" class="form-control" name="qty" value="{{$barang->qty}}">
             </div>
+            <input type="button" onclick="history.back();" value="Back" class="btn btn-danger">
+            <input type="reset" class="btn btn-warning">
             <input type="submit" name="submit" value="Update" class="btn btn-success">
         </form>
     </div>

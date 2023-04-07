@@ -31,6 +31,8 @@
                 <label for="qty" class="form-label">Quantity Barang</label>
                 <input type="integer" class="form-control" name="qty" aria-describedby="emailHelp">
             </div>
+            <input type="button" onclick="history.back();" value="Back" class="btn btn-danger">
+            <input type="reset" class="btn btn-warning">
             <input type="submit" name="submit" value="Save" class="btn btn-success">
         </form>
     </div>
